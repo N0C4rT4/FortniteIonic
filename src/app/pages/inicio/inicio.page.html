@@ -1,0 +1,52 @@
+<ion-header no-border>
+    <ion-toolbar>
+        <ion-title>Fortnite</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+
+    <ion-list>
+        <ion-item *ngFor="let c of componentes" [routerLink]="c.redirecTo" detail>
+            <ion-icon slot="start" [name]="c.icon"></ion-icon>
+            <ion-label>{{c.name}}</ion-label>
+        </ion-item>
+    </ion-list>
+
+
+</ion-content>
+
+
+
+
+<!-- todo lo que voy a poner en la pagina de inicio lo que se muestre -->
+
+
+<!-- <ion-button routerLink="/weapons">
+        Weapons
+    </ion-button>
+
+    <ion-button routerLink="/challenges">
+        Challenges
+    </ion-button>
+
+    <ion-button routerLink="/usuarios">
+        Users
+    </ion-button> -->
+<!-- <ion-list>
+        <ion-item routerLink="/challenges" detail>
+            <ion-label>Challenges</ion-label>
+        </ion-item>
+    </ion-list>
+    <ion-list>
+        <ion-item routerLink="/usuarios" detail>
+            <ion-label>Users</ion-label>
+        </ion-item>
+    </ion-list>
+    <ion-list>
+        <ion-item routerLink="/weapons" detail>
+            <ion-label>Weapons</ion-label>
+        </ion-item>
+    </ion-list> -->

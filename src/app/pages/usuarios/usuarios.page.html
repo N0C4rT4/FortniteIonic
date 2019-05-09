@@ -1,0 +1,23 @@
+<app-header titulo="usuarios"></app-header>
+
+<ion-content>
+
+    <ion-list #lista>
+
+        <ion-item *ngFor="let j of jugadores | async">
+            <ion-label>
+                <h3>{{j.name}}</h3>
+                <p>
+                    {{j.email}}
+                </p>
+            </ion-label>
+
+            <ion-label slot="end" text-right>
+                {{j.phone}}
+            </ion-label>
+
+
+        </ion-item>
+    </ion-list>
+
+</ion-content>

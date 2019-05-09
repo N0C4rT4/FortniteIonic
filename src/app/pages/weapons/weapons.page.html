@@ -1,0 +1,37 @@
+<!-- <ion-header>
+    <ion-toolbar>
+
+        <ion-button slot="start"></ion-button>
+        <ion-back-button defaultHref="/"></ion-back-button>
+
+        <ion-title>weapons</ion-title>
+    </ion-toolbar>
+</ion-header> -->
+
+
+<!-- <app-header titulo="weapons"></app-header> -->
+
+<ion-content padding>
+
+    <ion-list #lista>
+        <ion-item *ngFor="let a of armas | async">
+            <ion-label>
+
+                <h3>{{a.name}}</h3>
+                <p>
+                    <!-- <h2>Damage</h2> -->
+                    {{a.body}} {{a.head}}
+                </p>
+
+
+            </ion-label>
+            <ion-label slot="end" text-right>
+                <!-- {{a.damage}} -->
+            </ion-label>
+        </ion-item>
+    </ion-list>
+
+
+
+
+</ion-content>

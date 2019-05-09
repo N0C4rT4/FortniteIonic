@@ -1,0 +1,22 @@
+<app-header titulo="challenges"></app-header>
+
+<ion-content>
+
+    <ion-list>
+        <ion-item *ngFor="let r of retos">
+            <ion-label>
+                <h3>{{r.language}}</h3>
+                <p>
+                    {{r.season}}
+                </p>
+
+
+            </ion-label>
+            <ion-label slot="end" text-right>
+                <!-- {{r.difficulty}} -->
+            </ion-label>
+        </ion-item>
+    </ion-list>
+
+
+</ion-content>
