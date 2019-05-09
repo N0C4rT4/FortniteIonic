@@ -14,12 +14,11 @@ export class ChallengesPage implements OnInit {
   retos: Challenges[] ;
 
   constructor(private dataService : DataService) { }
-
   ngOnInit() {
     this.dataService
     .getChallenge()
     .subscribe((data: Challenges[]) => {
-      this.retos = JSON.stringify(data);
+      this.retos = data;
       console.log(this.retos[0].language);
     });
   }

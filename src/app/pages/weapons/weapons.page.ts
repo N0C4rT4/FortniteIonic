@@ -2,6 +2,8 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { DataService } from 'src/app/services/data.service';
 import { Observable } from 'rxjs';
 import { IonList } from '@ionic/angular';
+import Weapons from '../../Weapons';
+
 
 @Component({
   selector: 'app-weapons',
@@ -15,15 +17,23 @@ export class WeaponsPage implements OnInit {
 
   @ViewChild('lista') lista: IonList;
   
-  armas: Observable <any>;
+  armas: Weapons[];
+
 
   constructor(private dataService:DataService) { }
 
   ngOnInit() {
 
-    //  this.armas=this.dataService.getWeapon();
-    this.dataService.getWeapon()
-    .subscribe(console.log);
+     this.dataService.getWeapon().subscribe(
+       (data)=> {
+           console.log("armas", data);
+           console.log("weapons", data.weapons);
+          this.armas = data.weapons;
+          
+       }
+     );
+    // this.dataService.getWeapon()
+    // .subscribe(console.log);
     
 
 

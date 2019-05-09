@@ -14,13 +14,14 @@
 <ion-content padding>
 
     <ion-list #lista>
-        <ion-item *ngFor="let a of armas | async">
+        <ion-item *ngFor="let a of armas">
             <ion-label>
 
-                <h3>{{a.name}}</h3>
+                <h3>{{a.name}}{{a.image}}</h3>
+
                 <p>
                     <!-- <h2>Damage</h2> -->
-                    {{a.body}} {{a.head}}
+                    {{a.stats.damage.body}} {{a.stats.damage.head}}
                 </p>
 
 
