@@ -30,6 +30,8 @@
  * npm install -g ionic
 
  * ionic serve
+ 
+ * Autor: Noelia Carrillo
 
 
  
