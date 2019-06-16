@@ -11,10 +11,20 @@
 
 * Naveganción entre pantalla con animación
 * Cambiar el root de la aplicación (pagina inicial)
-* Impletar botón retorno
+* Impletación de pages y tabs
 * Módulo para agrupar todos los componentes personalizados
 * Listas
 * Componente header
+* Foro
+* Pipes
+* login / register
+* Avatar
+* Noticias y guias
+* Subida de imagenes de partidas
+* Geolocalización con mapas 
+
+
+
 
 *************************************************************************************
 # Una primera interacción con las funcionalidades de la aplicación fortnite
